@@ -1,0 +1,36 @@
+header {
+    background-color: #ff8105;
+    text-align: center;
+}
+
+header .row {
+    height: 100vh;
+    /* Приклад! Висота header завжди рівна висоті екрану пристрою */
+    justify-content: center;
+    /* Контейнери всередині header .row центруються по основній осі (горизонтально) */
+    align-items: center;
+    /* Контейнер всередині header .row центрується по поперечній осі (вертикально) */
+}
+
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #txt {
+    padding-top: 30%;
+    }
+}
+
+
+/* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+section {
+    padding: 25px 0;
+}
+
+@media screen and (max-width: 850px) and (orientation : landscape){
+    #head .row {
+       min-height: 250vh;
+    }
+}

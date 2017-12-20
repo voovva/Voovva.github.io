@@ -1,0 +1,181 @@
+        body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+/*************************************/
+
+
+/* Зміни CSS коду розпочинати звідси */
+
+
+/*************************************/
+
+section {}
+
+
+p {}
+h1 {
+    font-size: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    color: #ff8105;
+    padding-bottom: 5%;
+    
+}
+
+h2 {
+    font-size: 30px;
+/*    padding-top: 80px;*/
+/*    padding-bottom: 50px;*/
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    color: #ff8105;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif, 700;
+    color: #2d2b2b;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    color: #2d2b2b;
+    padding-top: 20px;
+}
+
+p1 {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+}
+
+.item2 {
+    padding-bottom: 60px;
+}
+
+.item3 {
+    padding-left: 65px;
+    padding-bottom: 30px;
+}
+
+#portfolio {
+    background-color: #fff;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#contact .row{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact{
+	color: white;
+}
+#contact h1{color: #646666}
+
+.form-control-white {
+    background: transparent;
+    color:#646666;
+}
+
+.form-control-white::-webkit-input-placeholder { /* WebKit browsers */
+    color: #a3a3a3;
+}
+.form-control-white:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:  #a3a3a3;
+    opacity:  1;
+}
+.form-control-white::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:  #a3a3a3;
+    opacity:  1;
+}
+.form-control-white:-ms-input-placeholder { /* Internet Explorer 10+ */
+     color:  #a3a3a3;
+}
+#botom{
+    color: #fff;
+    background-color: #ff8105;
+}
+
+
+#footer{ 
+    height: 70px;
+    background: #ff8105; 
+    color: white;
+}
+#f{
+    justify-content: center;
+}
+#footer i{
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+}
+#foto{
+    
+    width: 100%;
+}
+
+a {
+    color: #c00;
+    /* Колір текстових лінків */
+}
+
+a:focus,
+a:hover {
+    color: #c00;
+    /* Колір текстових лінків для псевдокласів */
+}
+
+
+
+
+/**************************************/
+
+
+/* Зміна властивостей для breakpoints */
+
+
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar,
+    {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+        padding: 25px 0;
+    }
+    @media screen and (max-width: 850px) and (orientation : landscape){
+    #contact .row {
+        height: 250vh;
+    }
+}
